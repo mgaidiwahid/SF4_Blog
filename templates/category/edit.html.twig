@@ -1,0 +1,15 @@
+{# templates/blog/edit.html.twig #}
+{% extends "base.html.twig" %}
+
+{% block title %}Modifier{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h4>Modifier la catégorie - "{{ categorie.label }}"</h4>
+            </div>
+        </div>
+        {% include "includes/category_form.html.twig" %}
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{# templates/includes/article_form.html.twig #}
+{{ form_start(form, {'attr': {'class': 'row'}}) }}
+<div class="input-field col s12 m6 l6">
+    {{ form_widget(form.label, {'attr': {'placeholder': 'Titre de la categorie'}}) }}
+    {{ form_label(form.label, 'Titre de la categorie') }}
+    <span class="error">{{ form_errors(form.label) }}</span>
+</div>
+
+<div class="input-field col s12 m12 l12">
+    <p>
+        <label>
+            {{ form_widget(form.isPublished, {'attr': {'class': 'filled-in'}}) }}
+            <span>Publier</span>
+        </label>
+    </p>
+</div>
+<div class="input-field col s12 m12 l12">
+    <input type="submit" name="" value="Enregistrer" class="btn btn-primary">
+</div>
+{{ form_end(form) }}
